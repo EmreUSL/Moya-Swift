@@ -1,0 +1,6 @@
+framework module Pods_Swift_Moya {
+  umbrella header "Pods-Swift-Moya-umbrella.h"
+
+  export *
+  module * { export * }
+}
