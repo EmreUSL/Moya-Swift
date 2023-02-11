@@ -8,24 +8,23 @@
 import Foundation
 import Moya
 
-struct ServiceManager {
+struct ServiceManager<Target> where Target: Moya.TargetType {
     
-    static let shared = ServiceManager()
-    private let provider = MoyaProvider<Service>()
-    
-    func getUser() {
-        provider.request(.getUsers) { result in
+    internal let provider = MoyaProvider<Target>()
+        
+    func request<T: Decodable>(target: Target, model:T.Type, completion: @escaping(Result<T, MoyaError>) -> Void) {
+        provider.request(target) { result in
             switch result {
                 
             case .success(let response):
                 do {
-                    let data = try response.map([User].self)
-                    print(data)
-                } catch {
-                    print(error)
+                    let mapResponse = try response.map(T.self)
+                    completion(.success(mapResponse))
+                } catch let error {
+                    completion(.failure(.encodableMapping(error)))
                 }
             case .failure(let error):
-                print(error)
+                completion(.failure(error))
             }
         }
     }

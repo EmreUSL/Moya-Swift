@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6403AFA72998448300C1FFB6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6403AFA62998448300C1FFB6 /* UserProfile.swift */; };
+		646481252997D1E000D4A2FD /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646481232997D1E000D4A2FD /* MainCell.swift */; };
+		646481262997D1E000D4A2FD /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646481242997D1E000D4A2FD /* MainCell.xib */; };
+		646481292997D60800D4A2FD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646481282997D60800D4A2FD /* UIView+Ext.swift */; };
 		649B75172996E81200BB22AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B75162996E81200BB22AD /* AppDelegate.swift */; };
 		649B75192996E81200BB22AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B75182996E81200BB22AD /* SceneDelegate.swift */; };
 		649B75202996E81300BB22AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649B751F2996E81300BB22AD /* Assets.xcassets */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		2E4F45C95144A93C36A102EE /* Pods-Swift-Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Moya.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Moya/Pods-Swift-Moya.debug.xcconfig"; sourceTree = "<group>"; };
+		6403AFA62998448300C1FFB6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		646481232997D1E000D4A2FD /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		646481242997D1E000D4A2FD /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		646481282997D60800D4A2FD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		649B75132996E81200BB22AD /* Swift-Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Moya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649B75162996E81200BB22AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649B75182996E81200BB22AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646481222997D19F00D4A2FD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				646481232997D1E000D4A2FD /* MainCell.swift */,
+				646481242997D1E000D4A2FD /* MainCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		646481272997D5F300D4A2FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				646481282997D60800D4A2FD /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		649B750A2996E81200BB22AD = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +94,10 @@
 		649B75152996E81200BB22AD /* Swift-Moya */ = {
 			isa = PBXGroup;
 			children = (
+				646481272997D5F300D4A2FD /* Extensions */,
 				649B752D2996EA6200BB22AD /* Network */,
 				649B752A2996EA4A00BB22AD /* Entity */,
+				646481222997D19F00D4A2FD /* Cells */,
 				649B75302996EAFD00BB22AD /* Scene */,
 				649B75162996E81200BB22AD /* AppDelegate.swift */,
 				649B75182996E81200BB22AD /* SceneDelegate.swift */,
@@ -85,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				649B752B2996EA5100BB22AD /* User.swift */,
+				6403AFA62998448300C1FFB6 /* UserProfile.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -194,6 +222,7 @@
 			files = (
 				649B75232996E81300BB22AD /* LaunchScreen.storyboard in Resources */,
 				649B75202996E81300BB22AD /* Assets.xcassets in Resources */,
+				646481262997D1E000D4A2FD /* MainCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +277,13 @@
 			files = (
 				649B75352996EB5300BB22AD /* MainSceneViewModel.swift in Sources */,
 				649B752C2996EA5100BB22AD /* User.swift in Sources */,
+				6403AFA72998448300C1FFB6 /* UserProfile.swift in Sources */,
 				649B752F2996EA7200BB22AD /* Service.swift in Sources */,
 				649B75172996E81200BB22AD /* AppDelegate.swift in Sources */,
 				649B75332996EB3F00BB22AD /* MainScene.swift in Sources */,
+				646481292997D60800D4A2FD /* UIView+Ext.swift in Sources */,
 				649B753B2996F68200BB22AD /* ServiceManager.swift in Sources */,
+				646481252997D1E000D4A2FD /* MainCell.swift in Sources */,
 				649B75192996E81200BB22AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
