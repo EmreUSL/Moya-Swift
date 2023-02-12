@@ -10,6 +10,7 @@ import Moya
 
 enum Service {
     case getUsers
+    case getUserPosts(userId: Int)
 }
 
 extension Service: TargetType {
@@ -22,12 +23,16 @@ extension Service: TargetType {
             
         case .getUsers:
             return "/users"
+        case .getUserPosts(userId: let userId):
+            return "/posts?userId=\(userId)"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .getUsers:
+            return .get
+        case .getUserPosts:
             return .get
         }
     }

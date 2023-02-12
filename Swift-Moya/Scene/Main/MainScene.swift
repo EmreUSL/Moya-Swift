@@ -58,5 +58,9 @@ extension MainScene: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(UserPostScene(), animated: true)
+    }
+    
     
 }

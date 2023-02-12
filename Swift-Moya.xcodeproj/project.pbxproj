@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6403AFA72998448300C1FFB6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6403AFA62998448300C1FFB6 /* UserProfile.swift */; };
+		64631B682999902500367211 /* UserPostScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64631B672999902500367211 /* UserPostScene.swift */; };
+		64631B6A2999903100367211 /* UserPostSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64631B692999903100367211 /* UserPostSceneViewModel.swift */; };
 		646481252997D1E000D4A2FD /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646481232997D1E000D4A2FD /* MainCell.swift */; };
 		646481262997D1E000D4A2FD /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646481242997D1E000D4A2FD /* MainCell.xib */; };
 		646481292997D60800D4A2FD /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646481282997D60800D4A2FD /* UIView+Ext.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		2E4F45C95144A93C36A102EE /* Pods-Swift-Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Moya.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Moya/Pods-Swift-Moya.debug.xcconfig"; sourceTree = "<group>"; };
 		6403AFA62998448300C1FFB6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		64631B672999902500367211 /* UserPostScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostScene.swift; sourceTree = "<group>"; };
+		64631B692999903100367211 /* UserPostSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostSceneViewModel.swift; sourceTree = "<group>"; };
 		646481232997D1E000D4A2FD /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		646481242997D1E000D4A2FD /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
 		646481282997D60800D4A2FD /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64631B6629998FCE00367211 /* UserPost */ = {
+			isa = PBXGroup;
+			children = (
+				64631B672999902500367211 /* UserPostScene.swift */,
+				64631B692999903100367211 /* UserPostSceneViewModel.swift */,
+			);
+			path = UserPost;
+			sourceTree = "<group>";
+		};
 		646481222997D19F00D4A2FD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				649B75312996EB1300BB22AD /* Main */,
+				64631B6629998FCE00367211 /* UserPost */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -277,9 +291,11 @@
 			files = (
 				649B75352996EB5300BB22AD /* MainSceneViewModel.swift in Sources */,
 				649B752C2996EA5100BB22AD /* User.swift in Sources */,
+				64631B6A2999903100367211 /* UserPostSceneViewModel.swift in Sources */,
 				6403AFA72998448300C1FFB6 /* UserProfile.swift in Sources */,
 				649B752F2996EA7200BB22AD /* Service.swift in Sources */,
 				649B75172996E81200BB22AD /* AppDelegate.swift in Sources */,
+				64631B682999902500367211 /* UserPostScene.swift in Sources */,
 				649B75332996EB3F00BB22AD /* MainScene.swift in Sources */,
 				646481292997D60800D4A2FD /* UIView+Ext.swift in Sources */,
 				649B753B2996F68200BB22AD /* ServiceManager.swift in Sources */,
