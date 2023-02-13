@@ -16,11 +16,14 @@ protocol UserPostSceneViewModelInterface {
 
 final class UserPostSceneViewModel {
     weak var view: UserPostSceneInterface?
+    var user:User?
 }
 
 extension UserPostSceneViewModel: UserPostSceneViewModelInterface {
     func viewDidLoad() {
-        view?.configureScrollView()
+        view?.configureScroll()
+        view?.configureUI()
+        view?.configureTableView()
     }
     
     
