@@ -59,8 +59,17 @@ extension MainScene: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(UserPostScene(), animated: true)
+        let model = viewModel.users[indexPath.row]
+        
+        navigationController?.pushViewController(UserPostScene(model: model,
+                                                               user: indexPath.row), animated: true)
     }
     
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        120
+    }
+    
+
     
 }

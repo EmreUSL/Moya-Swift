@@ -15,17 +15,19 @@ protocol UserPostSceneInterface: AnyObject {
 
 class UserPostScene: UIViewController {
     
-//    init(model: User) {
-//        self.model = model
-//        super.init()
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    init(model: User, user:Int) {
+       self.model = model
+       viewModel.getUserPost(userId: user)
+       super.init(nibName: nil, bundle: nil)
+    }
+    
+
+   required init?(coder: NSCoder) {
+       fatalError("init(coder:) has not been implemented")
+   }
     
     private let viewModel = UserPostSceneViewModel()
-    private let model:User? = nil
+    private var model:User?
     
     private var scrollView: UIScrollView!
     private var contentView: UIView!
@@ -83,6 +85,7 @@ extension UserPostScene: UserPostSceneInterface {
         profileImage.translatesAutoresizingMaskIntoConstraints = false
         
         profileView = ProfileView()
+        profileView.nameLabel.text = model?.name
         profileView.translatesAutoresizingMaskIntoConstraints = false
         
         contentView.addSubview(backgroundView)
@@ -101,39 +104,55 @@ extension UserPostScene: UserPostSceneInterface {
             profileImage.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 25),
             profileImage.widthAnchor.constraint(equalToConstant: 100),
             profileImage.heightAnchor.constraint(equalToConstant: 100),
-            
-            profileView.topAnchor.constraint(equalTo: backgroundView.bottomAnchor),
-            profileView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            profileView.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor),
+           
 
         ])
     }
     
     func configureTableView() {
         tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+      
         tableView.register(UINib(nibName: "UserPostCell", bundle: nil),
                            forCellReuseIdentifier: UserPostCell.identifier)
-        
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+
         tableView.delegate = self
         tableView.dataSource = self
-        
+            
         contentView.addSubview(tableView)
         
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 100),
-            tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-        ])
-
+        let height = view.frame.height - 400
+        
+      NSLayoutConstraint.activate([
+        
+        profileView.topAnchor.constraint(equalTo: backgroundView.bottomAnchor),
+        profileView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+        profileView.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor),
+        profileView.bottomAnchor.constraint(equalTo: tableView.topAnchor),
+        profileView.heightAnchor.constraint(equalToConstant: 150),
+        
+        tableView.topAnchor.constraint(equalTo: profileView.bottomAnchor),
+        tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+        tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+        tableView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+        
+     
+        tableView.heightAnchor.constraint(equalToConstant: height)
+       
+         
+     ])
+        
+       
+        
     }
         
 }
 
 extension UserPostScene: UITableViewDelegate, UITableViewDataSource {
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

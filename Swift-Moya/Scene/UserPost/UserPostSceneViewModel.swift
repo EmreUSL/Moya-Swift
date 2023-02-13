@@ -11,6 +11,7 @@ import Foundation
 protocol UserPostSceneViewModelInterface {
     var view: UserPostSceneInterface? { get set }
     func viewDidLoad()
+    func getUserPost(userId: Int)
 }
 
 
@@ -25,6 +26,19 @@ extension UserPostSceneViewModel: UserPostSceneViewModelInterface {
         view?.configureUI()
         view?.configureTableView()
     }
+    
+    func getUserPost(userId: Int) {
+        ServiceManager<Service>().request(target: .getUserPosts(userId: userId), model: [UserPosts].self) { result in
+            switch result {
+            case .success(let response):
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+    }
+    
     
     
 }
