@@ -17,10 +17,11 @@ protocol UserPostSceneViewModelInterface {
 
 final class UserPostSceneViewModel {
     weak var view: UserPostSceneInterface?
-    var user:User?
+    var posts:[Post] = []
 }
 
 extension UserPostSceneViewModel: UserPostSceneViewModelInterface {
+    
     func viewDidLoad() {
         view?.configureScroll()
         view?.configureUI()
@@ -28,17 +29,16 @@ extension UserPostSceneViewModel: UserPostSceneViewModelInterface {
     }
     
     func getUserPost(userId: Int) {
-        ServiceManager<Service>().request(target: .getUserPosts(userId: userId), model: [UserPosts].self) { result in
+        ServiceManager<Service>().request(target: .getUserPosts(userId: userId), model: [Post].self) { result in
             switch result {
             case .success(let response):
-                print(response)
+                self.posts = response
+                self.view?.reloadUI()
             case .failure(let error):
                 print(error)
             }
         }
-        
     }
     
-    
-    
+   
 }

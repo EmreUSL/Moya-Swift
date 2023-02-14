@@ -15,7 +15,6 @@ struct ServiceManager<Target> where Target: Moya.TargetType {
     func request<T: Decodable>(target: Target, model:T.Type, completion: @escaping(Result<T, MoyaError>) -> Void) {
         provider.request(target) { result in
             switch result {
-                
             case .success(let response):
                 do {
                     let mapResponse = try response.map(T.self)

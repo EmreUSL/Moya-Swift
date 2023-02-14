@@ -11,14 +11,19 @@ protocol UserPostSceneInterface: AnyObject {
     func configureScroll()
     func configureUI()
     func configureTableView()
+    func reloadUI()
 }
 
 class UserPostScene: UIViewController {
     
-    init(model: User, user:Int) {
-       self.model = model
-       viewModel.getUserPost(userId: user)
-       super.init(nibName: nil, bundle: nil)
+    private var photoName: String?
+    
+    init(model: User, user: Int ,photo:String) {
+        super.init(nibName: nil, bundle: nil)
+        self.model = model
+        self.photoName = photo
+        viewModel.getUserPost(userId: user+1)
+       
     }
     
 
@@ -31,7 +36,7 @@ class UserPostScene: UIViewController {
     
     private var scrollView: UIScrollView!
     private var contentView: UIView!
-    private var backgroundView: UIView!
+    private var backgroundView: UIImageView!
     private var profileImage: UIImageView!
     private var profileView: ProfileView!
     private var tableView: UITableView!
@@ -76,16 +81,18 @@ extension UserPostScene: UserPostSceneInterface {
     }
     
     func configureUI() {
-        backgroundView = UIView()
+        backgroundView = UIImageView()
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.backgroundColor = UIColor.red
+        backgroundView.image = UIImage(named: "windows")
         
         profileImage = UIImageView()
-        profileImage.image = UIImage(named: "LeanneGraham")
+        guard let photo = photoName else { return }
+        profileImage.image = UIImage(named: photo)
         profileImage.translatesAutoresizingMaskIntoConstraints = false
         
         profileView = ProfileView()
         profileView.nameLabel.text = model?.name
+        profileView.emailLabel.text = model?.email
         profileView.translatesAutoresizingMaskIntoConstraints = false
         
         contentView.addSubview(backgroundView)
@@ -118,11 +125,12 @@ extension UserPostScene: UserPostSceneInterface {
 
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.isScrollEnabled = false
+        tableView.sizeToFit()
             
         contentView.addSubview(tableView)
         
-        let height = view.frame.height - 400
-        
+    
       NSLayoutConstraint.activate([
         
         profileView.topAnchor.constraint(equalTo: backgroundView.bottomAnchor),
@@ -136,14 +144,14 @@ extension UserPostScene: UserPostSceneInterface {
         tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
         tableView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         
-     
-        tableView.heightAnchor.constraint(equalToConstant: height)
+        tableView.heightAnchor.constraint(equalToConstant: 1950)
        
-         
      ])
-        
-       
-        
+
+    }
+    
+    func reloadUI() {
+        tableView.reloadMainThread()
     }
         
 }
@@ -152,11 +160,13 @@ extension UserPostScene: UITableViewDelegate, UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserPostCell.identifier, for: indexPath) as! UserPostCell
+        let post = viewModel.posts[indexPath.row]
+        cell.configure(post: post)
         return cell
     }
 

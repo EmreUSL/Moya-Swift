@@ -11,7 +11,8 @@ class UserPostCell: UITableViewCell {
     
     static let identifier = "UserPostCell"
 
-    @IBOutlet weak var postLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var bodyLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -25,8 +26,9 @@ class UserPostCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    public func configure(post: String) {
-        postLabel.text = post
+    public func configure(post: Post) {
+        titleLabel.text = post.title
+        bodyLabel.text = post.body
     }
     
 }

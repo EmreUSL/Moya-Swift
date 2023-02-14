@@ -24,7 +24,7 @@ extension Service: TargetType {
         case .getUsers:
             return "/users"
         case .getUserPosts(userId: let userId):
-            return "/posts?userId=\(userId)"
+            return "/users/\(userId)/posts"
         }
     }
     

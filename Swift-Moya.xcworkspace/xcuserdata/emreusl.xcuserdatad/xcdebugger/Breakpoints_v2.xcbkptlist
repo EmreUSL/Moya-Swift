@@ -378,8 +378,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "UserPostScene"
             landmarkType = "3">
             <Locations>
@@ -486,8 +486,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "configureUI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -502,8 +502,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "configureUI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -614,8 +614,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "configureTableView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -630,8 +630,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "configureTableView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -640,14 +640,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B675D0C-CC4D-478D-A102-A3C91AABC28A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -656,14 +656,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BF1C3904-4A9B-45B3-BFC7-8A70AD000038"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -678,24 +678,24 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "UserPostScene"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "45A5AF4F-1F5A-4C42-9C06-A2F82FF4BFEF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -704,14 +704,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B8DD394-0BD6-4A9C-B29B-64953189C314"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -726,8 +726,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "configureUI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -742,8 +742,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "configureUI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -758,8 +758,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -822,24 +822,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "configureTableView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7FB8A42C-B77E-4745-AA0D-28A072C67661"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "configureTableView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -854,8 +838,8 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "configureTableView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -870,121 +854,9 @@
             filePath = "Swift-Moya/Scene/UserPost/UserPostScene.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "init(model:user:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E2255F62-7718-495B-8717-81DE727E345A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "getUserPost(userId:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E2255F62-7718-495B-8717-81DE727E345A - 3d6c39bb68c59d37"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Swift_Moya.UserPostSceneViewModel.getUserPost(userId: Swift.Int) -&gt; ()"
-                  moduleName = "Swift-Moya"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emreusl/Desktop/Git/Moya/Swift-Moya/Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "E2255F62-7718-495B-8717-81DE727E345A - 7659c97e68d4a02e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Swift_Moya.UserPosts&gt;, Moya.MoyaError&gt;) -&gt; () in Swift_Moya.UserPostSceneViewModel.getUserPost(userId: Swift.Int) -&gt; ()"
-                  moduleName = "Swift-Moya"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emreusl/Desktop/Git/Moya/Swift-Moya/Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "128">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "514C0F9B-A11F-4E8D-A09B-543AB0B1F991"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "getUserPost(userId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6CACC528-AE71-4495-B664-8E2C0765955C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getUserPost(userId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F4D424F2-A6FC-411B-8258-FC1451163E79"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "getUserPost(userId:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8EF43314-75E7-4C68-9C90-D3203B933369"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "getUserPost(userId:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init(model:user:photo:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1007,7 +879,55 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "28B035AF-5A16-41B3-8C33-BFA18DB24581"
+            uuid = "66422C6B-1B84-4B48-B904-E15CFA07E4D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swift-Moya/Network/ServiceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "request(target:model:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66422C6B-1B84-4B48-B904-E15CFA07E4D4 - 4a2a94b9cec2bf6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in Swift_Moya.ServiceManager.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, model: &#x3c4;_1_0.Type, completion: (Swift.Result&lt;&#x3c4;_1_0, Moya.MoyaError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Swift-Moya"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emreusl/Desktop/Git/Moya/Swift-Moya/Swift-Moya/Network/ServiceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1200">
+               </Location>
+               <Location
+                  uuid = "66422C6B-1B84-4B48-B904-E15CFA07E4D4 - 4a2a94b9cec2bf6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in Swift_Moya.ServiceManager.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, model: &#x3c4;_1_0.Type, completion: (Swift.Result&lt;&#x3c4;_1_0, Moya.MoyaError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Swift-Moya"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emreusl/Desktop/Git/Moya/Swift-Moya/Swift-Moya/Network/ServiceManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1672">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CD2D110-7D57-4B7E-9449-1976711D2E74"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1023,64 +943,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "66422C6B-1B84-4B48-B904-E15CFA07E4D4"
+            uuid = "C63CFBDA-FD31-4CA9-B734-247786AABE63"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Network/ServiceManager.swift"
+            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "request(target:model:completion:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getUserPost(userId:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "66422C6B-1B84-4B48-B904-E15CFA07E4D4 - 4a2a94b9cec2bf48"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in Swift_Moya.ServiceManager.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, model: &#x3c4;_1_0.Type, completion: (Swift.Result&lt;&#x3c4;_1_0, Moya.MoyaError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Swift-Moya"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emreusl/Desktop/Git/Moya/Swift-Moya/Swift-Moya/Network/ServiceManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "680">
-               </Location>
-               <Location
-                  uuid = "66422C6B-1B84-4B48-B904-E15CFA07E4D4 - 4a2a94b9cec2bf48"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in Swift_Moya.ServiceManager.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, model: &#x3c4;_1_0.Type, completion: (Swift.Result&lt;&#x3c4;_1_0, Moya.MoyaError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Swift-Moya"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emreusl/Desktop/Git/Moya/Swift-Moya/Swift-Moya/Network/ServiceManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "1140">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6CD2D110-7D57-4B7E-9449-1976711D2E74"
+            uuid = "5790F3BC-1EE3-4F4A-B5E9-577306FE330B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Swift-Moya/Network/ServiceManager.swift"
+            filePath = "Swift-Moya/Scene/UserPost/UserPostSceneViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "request(target:model:completion:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getUserPost(userId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
