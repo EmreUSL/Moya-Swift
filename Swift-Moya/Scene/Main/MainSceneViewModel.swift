@@ -38,5 +38,4 @@ extension MainSceneViewModel: MainSceneViewModelInterface {
         }
         
     }
-    
 }

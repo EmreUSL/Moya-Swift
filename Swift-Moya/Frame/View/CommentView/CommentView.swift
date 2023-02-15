@@ -28,7 +28,7 @@ class CommentView: UIView {
     }
     
     public func configureView(title: String, body: String) {
-        titleLabel.text = title
+        titleLabel.text = "'\(title)'"
         bodyLabel.text = body
     }
     

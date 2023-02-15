@@ -23,7 +23,6 @@ class UserPostScene: UIViewController {
         self.model = model
         self.photoName = photo
         viewModel.getUserPost(userId: user+1)
-       
     }
     
 
@@ -46,7 +45,6 @@ class UserPostScene: UIViewController {
         viewModel.view = self
         viewModel.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
   
 }
@@ -165,15 +163,14 @@ extension UserPostScene: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserPostCell.identifier, for: indexPath) as! UserPostCell
         let post = viewModel.posts[indexPath.row]
         cell.configure(post: post)
+        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = viewModel.posts[indexPath.row]
         let title = Title(title: model.title, body: model.body)
-        navigationController?.pushViewController(CommentScene(model: title), animated: true)
+        navigationController?.pushViewController(CommentScene(model: title,
+                                                              postId: indexPath.row), animated: true)
     }
-
-
-
 }

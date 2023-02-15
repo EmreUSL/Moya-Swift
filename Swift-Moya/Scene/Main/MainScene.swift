@@ -17,20 +17,21 @@ class MainScene: UIViewController {
     
     private let viewModel = MainSceneViewModel()
     private var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel.view = self
         viewModel.viewDidLoad()
-
+        
     }
-
 }
 
 extension MainScene: MainSceneInterface {
     
     func configureTableView() {
+        navigationController?.navigationBar.topItem?.title = "Select User"
+        
         tableView = UITableView()
         tableView.register(UINib(nibName: "MainCell", bundle: nil),
                            forCellReuseIdentifier: MainCell.identifier)
@@ -44,7 +45,7 @@ extension MainScene: MainSceneInterface {
     func reloadUI() {
         tableView.reloadMainThread()
     }
-
+    
 }
 
 extension MainScene: UITableViewDelegate, UITableViewDataSource {
@@ -55,6 +56,7 @@ extension MainScene: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MainCell.identifier, for: indexPath) as! MainCell
         cell.configureCell(model: viewModel.users[indexPath.row], photo: viewModel.photo[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -66,11 +68,7 @@ extension MainScene: UITableViewDelegate, UITableViewDataSource {
                                                                photo: photo), animated: true)
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         120
     }
-    
-
-    
 }

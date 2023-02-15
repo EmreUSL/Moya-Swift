@@ -30,7 +30,7 @@ class TableViewHeader: UITableViewHeaderFooterView {
             headerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             headerView.widthAnchor.constraint(equalToConstant: contentView.frame.width),
-            headerView.heightAnchor.constraint(equalToConstant: 150),
+            headerView.heightAnchor.constraint(equalToConstant: 223),
         ])
     }
     

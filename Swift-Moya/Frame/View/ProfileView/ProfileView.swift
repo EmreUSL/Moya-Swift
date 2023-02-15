@@ -28,8 +28,6 @@ class ProfileView: UIView {
         addSubview(xibView)
     }
     
-   
-  
     public func configureView(name: String, email: String) {
         nameLabel.text = name
         emailLabel.text = email

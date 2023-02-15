@@ -20,10 +20,8 @@ class MainCell: UITableViewCell {
         nameLabel.text = model.name
         userNameLabel.text = "(\(model.username ?? ""))"
         emailLabel.text = model.email
-        
         profilePhoto.image = UIImage(named: photo)
     }
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()

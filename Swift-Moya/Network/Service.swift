@@ -27,7 +27,7 @@ extension Service: TargetType {
         case .getUserPosts(userId: let userId):
             return "/users/\(userId)/posts"
         case .getPostComments(postId: let postId):
-            return "/users\(postId)/comments"
+            return "/users/\(postId)/comments"
         }
     }
     

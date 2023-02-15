@@ -8,11 +8,11 @@
 import Foundation
 
 struct Comment: Codable {
-    var id: Int?
-    var postId: Int?
-    var name: String?
-    var email: String?
-    var body: String?
+    let id: Int?
+    let postId: Int?
+    let name: String?
+    let email: String?
+    let body: String?
 }
 
 

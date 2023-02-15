@@ -39,6 +39,4 @@ extension UserPostSceneViewModel: UserPostSceneViewModelInterface {
             }
         }
     }
-    
-   
 }
