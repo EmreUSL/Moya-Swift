@@ -11,6 +11,7 @@ import Moya
 enum Service {
     case getUsers
     case getUserPosts(userId: Int)
+    case getPostComments(postId: Int)
 }
 
 extension Service: TargetType {
@@ -25,6 +26,8 @@ extension Service: TargetType {
             return "/users"
         case .getUserPosts(userId: let userId):
             return "/users/\(userId)/posts"
+        case .getPostComments(postId: let postId):
+            return "/users\(postId)/comments"
         }
     }
     
@@ -33,6 +36,8 @@ extension Service: TargetType {
         case .getUsers:
             return .get
         case .getUserPosts:
+            return .get
+        case .getPostComments:
             return .get
         }
     }

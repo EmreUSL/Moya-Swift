@@ -130,26 +130,24 @@ extension UserPostScene: UserPostSceneInterface {
             
         contentView.addSubview(tableView)
         
-    
-      NSLayoutConstraint.activate([
         
-        profileView.topAnchor.constraint(equalTo: backgroundView.bottomAnchor),
-        profileView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-        profileView.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor),
-        profileView.bottomAnchor.constraint(equalTo: tableView.topAnchor),
-        profileView.heightAnchor.constraint(equalToConstant: 150),
-        
-        tableView.topAnchor.constraint(equalTo: profileView.bottomAnchor),
-        tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-        tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-        tableView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-        
-        tableView.heightAnchor.constraint(equalToConstant: 1950)
-       
-     ])
-
+        NSLayoutConstraint.activate([
+            
+            profileView.topAnchor.constraint(equalTo: backgroundView.bottomAnchor),
+            profileView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            profileView.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor),
+            profileView.bottomAnchor.constraint(equalTo: tableView.topAnchor),
+            profileView.heightAnchor.constraint(equalToConstant: 150),
+            
+            tableView.topAnchor.constraint(equalTo: profileView.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            
+            tableView.heightAnchor.constraint(equalToConstant: 1950)
+            
+        ])
     }
-    
     func reloadUI() {
         tableView.reloadMainThread()
     }
@@ -168,6 +166,12 @@ extension UserPostScene: UITableViewDelegate, UITableViewDataSource {
         let post = viewModel.posts[indexPath.row]
         cell.configure(post: post)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = viewModel.posts[indexPath.row]
+        let title = Title(title: model.title, body: model.body)
+        navigationController?.pushViewController(CommentScene(model: title), animated: true)
     }
 
 
