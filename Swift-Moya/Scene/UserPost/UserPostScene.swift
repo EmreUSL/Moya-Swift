@@ -97,8 +97,6 @@ extension UserPostScene: UserPostSceneInterface {
         contentView.addSubview(profileImage)
         contentView.addSubview(profileView)
         
-    
-        
         NSLayoutConstraint.activate([
             backgroundView.topAnchor.constraint(equalToSystemSpacingBelow: contentView.topAnchor, multiplier: 2),
             backgroundView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -127,7 +125,6 @@ extension UserPostScene: UserPostSceneInterface {
         tableView.sizeToFit()
             
         contentView.addSubview(tableView)
-        
         
         NSLayoutConstraint.activate([
             
