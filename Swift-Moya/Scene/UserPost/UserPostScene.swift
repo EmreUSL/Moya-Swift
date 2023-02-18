@@ -75,7 +75,6 @@ extension UserPostScene: UserPostSceneInterface {
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
         ])
-     
     }
     
     func configureUI() {
@@ -107,8 +106,6 @@ extension UserPostScene: UserPostSceneInterface {
             profileImage.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 25),
             profileImage.widthAnchor.constraint(equalToConstant: 100),
             profileImage.heightAnchor.constraint(equalToConstant: 100),
-           
-
         ])
     }
     

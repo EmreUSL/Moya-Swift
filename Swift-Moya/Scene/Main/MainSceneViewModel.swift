@@ -36,6 +36,5 @@ extension MainSceneViewModel: MainSceneViewModelInterface {
                 print(error)
             }
         }
-        
     }
 }
